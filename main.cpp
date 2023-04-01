@@ -7,7 +7,7 @@ int main()
     char op;
     float num1, num2;
 
-    cout << "Enter operator: +, -, *, /: ";
+    cout << "Enter operator: +, -, *, /, %: ";
     cin >> op;
 
     cout << "Enter two operands: ";
@@ -28,6 +28,10 @@ int main()
 
         case '/':
             cout << num1 << " / " << num2 << " = " << num1 / num2 << '\n';
+            break;
+
+         case '%':
+            cout << num1 << " % " << num2 << " = " << num1 % num2 << '\n';
             break;
 
         default:
